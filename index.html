@@ -45,7 +45,7 @@
         <ul class="contact list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com">
-              <svg class="contact-mail">
+              <svg class="contact-mail-icon">
                 <use
                   href="./images/maine/sprite.svg#icon-hat-envelopehover"
                 ></use>
@@ -55,7 +55,7 @@
           </li>
           <li class="item">
             <a class="link" href="tel:+380961111111">
-              <svg class="contact-tel">
+              <svg class="contact-tel-icon">
                 <use href="./images/maine/sprite.svg#icon-hat-smartphone"></use>
               </svg>
 
@@ -554,15 +554,15 @@
           </svg>
         </button>
 
-        <form action="" name="modal-form" class="modal-form">
+        <form action="" name="modal-form" class="modal-form" autocomplete="off">
           <p class="call-back">Оставьте свои данные, мы вам перезвоним</p>
           <div class="name-form-field">
-            <lable for="name" class="modal-lable">Имя</lable>
+            <lable for="name" class="name-lable">Имя</lable>
             <div class="relative">
               <input
                 name="name"
                 type="text"
-                class="modal-input"
+                class="name-input"
                 id="name"
                 placeholder=" "
                 autocomplete="off"
@@ -573,12 +573,12 @@
             </div>
           </div>
           <div class="tel-form-field">
-            <lable for="tel" class="modal-lable">Телефон</lable>
+            <lable for="tel" class="tel-lable">Телефон</lable>
             <div class="relative">
               <input
                 name="tel"
                 type="tel"
-                class="modal-input"
+                class="tel-input"
                 id="tel"
                 placeholder=" "
                 autocomplete="off"
@@ -589,12 +589,12 @@
             </div>
           </div>
           <div class="email-form-field">
-            <lable for="email" class="modal-lable">Почта</lable>
+            <lable for="email" class="email-lable">Почта</lable>
             <div class="relative">
               <input
                 name="email"
                 type="email"
-                class="modal-input"
+                class="email-input"
                 id="email"
                 placeholder=" "
                 autocomplete="off"
@@ -605,31 +605,31 @@
             </div>
           </div>
           <div class="comment-form-field">
-            <lable for="comment" class="modal-lable">Комментарий</lable>
+            <lable for="comment" class="comment-lable">Комментарий</lable>
             <textarea
               name="comment"
               type="text"
-              class="modal-input"
+              class="comment-input"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <div class="exept-form-field">
-            <div class="relative">
-              <input
-                name="exept"
-                type="checkbox"
-                class="checkbox"
-                id="exept"
-                placeholder=" "
-              />
-              <svg class="icon-check" width="16" height="15">
-                <use href="./images/maine/sprite.svg#icon-check"></use>
-              </svg>
-            </div>
-            <lable for="exept" class="modal-lable"
-              >Соглашаюсь с рассылкой и принимаю</lable
-            >
+            <input
+              name="exept"
+              type="checkbox"
+              class="checkbox"
+              value="checked"
+              id="exept"
+              placeholder=" "
+            />
+            <svg class="icon-check" width="16" height="15">
+              <use href="./images/maine/sprite.svg#icon-check"></use>
+            </svg>
+
+            <lable for="exept" class="checkbox-lable"
+              >Соглашаюсь с рассылкой и принимаю
+            </lable>
             <a href="" class="exept">Условия договора</a>
           </div>
           <button type="submit" class="form-send">Отправить</button>

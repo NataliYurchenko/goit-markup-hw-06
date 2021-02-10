@@ -169,18 +169,18 @@ header .contact {
   margin-left: 50px;
 }
 
-.contact-mail,
-.contact-tel {
+.contact-mail-icon,
+.contact-tel-icon {
   fill: currentColor;
 }
 
-.contact-mail {
+.contact-mail-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
 
-.contact-tel {
+.contact-tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -193,10 +193,6 @@ header .contact {
 .contact .link,
 .contact .link {
   transition: color var(--transition-duration) var(--transition-timing-function);
-  /* transition-property: color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  transition-delay: 0; */
 }
 
 .site-nav .link:hover,
@@ -1064,6 +1060,7 @@ p.call-back {
 .modal-form input {
   width: 448px;
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1078,20 +1075,23 @@ p.call-back {
 .modal-form textarea {
   width: 448px;
   height: 120px;
+  padding-left: 16px;
+  padding-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   resize: none;
 }
 
-.modal-form textarea::placeholder {
+/* .modal-form textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.01em;
+  margin-top: 16px;
 
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 
 button.form-send {
   display: flex;
@@ -1130,7 +1130,9 @@ div.relative {
   position: relative;
   margin-bottom: 10px;
 }
-.modal-form svg {
+.modal-form .name-icon,
+.modal-form .tel-icon,
+.modal-form .email-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -1142,20 +1144,37 @@ div.relative {
 }
 
 /* ЧОМУ НЕ ПРАЦЮЄ */
+
 .modal-form input:focus {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
 }
 
-.checkbox {
+/* .checkbox:checked {
+  width: 5px;
+  height: 5px;
+} */
+
+/* 
+.exept-form-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .checkbox {
   position: absolute;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   width: 423px;
   height: 24px;
-}
+} */
+
+/* .comment-input:focus + .comment-lable {
+  color: red;
+} */
 
 /* .checkbox:checked + .icon-check {
   background-origin: border-box;
