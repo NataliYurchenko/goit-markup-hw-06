@@ -28,10 +28,12 @@
 
           <ul class="site-nav list">
             <li class="item">
-              <a class="link" href="./" target="_blank"><span>Студия</span></a>
+              <a class="link current" href="./" target="_blank"
+                ><span>Студия</span></a
+              >
             </li>
             <li class="item">
-              <a class="link current" href="./portfolio.html" target="_blank"
+              <a class="link" href="./portfolio.html" target="_blank"
                 >Портфолио</a
               >
             </li>
@@ -43,7 +45,7 @@
         <ul class="contact list">
           <li class="item">
             <a class="link" href="mailto:info@devstudio.com">
-              <svg class="contact-mail">
+              <svg class="contact-mail-icon">
                 <use
                   href="./images/maine/sprite.svg#icon-hat-envelopehover"
                 ></use>
@@ -53,7 +55,7 @@
           </li>
           <li class="item">
             <a class="link" href="tel:+380961111111">
-              <svg class="contact-tel">
+              <svg class="contact-tel-icon">
                 <use href="./images/maine/sprite.svg#icon-hat-smartphone"></use>
               </svg>
 
@@ -365,6 +367,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form">
+          <form name="sign-up-form" class="footer-sign-up">
+            <b>Подпишитесь на рассылку</b>
+            <div class="sign-up">
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="E-mail"
+              />
+
+              <button type="submit" class="footer-sign-up">
+                Подписаться
+                <svg class="sign-up-icon" width="24" height="24">
+                  <use href="./images/maine/sprite.svg#icon-sign-up"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>

@@ -524,7 +524,7 @@
         </div>
 
         <div class="footer-form">
-          <form name="sign-up-form" action="" class="footer-sign-up">
+          <form name="sign-up-form" class="footer-sign-up">
             <b>Подпишитесь на рассылку</b>
             <div class="sign-up">
               <input
@@ -554,10 +554,10 @@
           </svg>
         </button>
 
-        <form action="" name="modal-form" class="modal-form" autocomplete="off">
+        <form name="modal-form" class="modal-form" autocomplete="off">
           <p class="call-back">Оставьте свои данные, мы вам перезвоним</p>
           <div class="name-form-field">
-            <lable for="name" class="name-lable">Имя</lable>
+            <label for="name" class="name-label">Имя</label>
             <div class="relative">
               <input
                 name="name"
@@ -573,7 +573,7 @@
             </div>
           </div>
           <div class="tel-form-field">
-            <lable for="tel" class="tel-lable">Телефон</lable>
+            <label for="tel" class="tel-label">Телефон</label>
             <div class="relative">
               <input
                 name="tel"
@@ -589,7 +589,7 @@
             </div>
           </div>
           <div class="email-form-field">
-            <lable for="email" class="email-lable">Почта</lable>
+            <label for="email" class="email-label">Почта</label>
             <div class="relative">
               <input
                 name="email"
@@ -605,32 +605,29 @@
             </div>
           </div>
           <div class="comment-form-field">
-            <lable for="comment" class="comment-lable">Комментарий</lable>
+            <label for="comment" class="comment-label">Комментарий</label>
             <textarea
               name="comment"
-              type="text"
               class="comment-input"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
           <div class="exept-form-field">
-            <input
-              name="exept"
-              type="checkbox"
-              class="checkbox"
-              value="checked"
-              id="exept"
-              placeholder=" "
-            />
-            <svg class="icon-check" width="16" height="15">
-              <use href="./images/maine/sprite.svg#icon-check"></use>
-            </svg>
-
-            <lable for="exept" class="checkbox-lable"
-              >Соглашаюсь с рассылкой и принимаю
-            </lable>
-            <a href="" class="exept">Условия договора</a>
+            <label for="exept" class="checkbox-label">
+              <input
+                name="exept"
+                type="checkbox"
+                class="checkbox"
+                value="checked"
+                id="exept"
+              />
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/maine/sprite.svg#icon-check"></use>
+              </svg>
+              <span>Соглашаюсь с рассылкой и принимаю</span>
+              <a href="" class="exept">Условия договора</a>
+            </label>
           </div>
           <button type="submit" class="form-send">Отправить</button>
         </form>
