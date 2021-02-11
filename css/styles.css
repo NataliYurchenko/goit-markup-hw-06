@@ -907,7 +907,6 @@ button.footer-sign-up {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* background-origin: border-box; */
 
   width: 200px;
   height: 50px;
@@ -919,10 +918,12 @@ button.footer-sign-up {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-origin: border-box;
+
+  border: transparent;
 }
 
 .sign-up-icon {
@@ -1036,6 +1037,13 @@ button.footer-sign-up {
   margin-right: auto; */
 }
 
+/* .name-form-field,
+.tel-form-field,
+.email-form-field {
+  display: flex;
+  flex-direction: column;
+} */
+
 p.call-back {
   margin-bottom: 12px;
 
@@ -1064,6 +1072,38 @@ p.call-back {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+
+/* .modal-form input:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+} */
+
+/* .relative input:focus-within {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+} */
+
+/*  */
+
+.name-input:focus,
+.tel-input:focus,
+.email-input:focus,
+.comment-input:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+input .checkbox {
+  /* border: 1px solid var(--accent-color); */
+  /* box-sizing: border-box; */
+  /* border-radius: 4px; */
+  border: transparent;
+  outline: none;
 }
 
 .modal-form textarea {
@@ -1098,12 +1138,16 @@ button.form-send {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  /* box-sizing: border-box; */
+  background-origin: border-box;
+  border: transparent;
 }
 
 button.form-send:focus {
   background: #188ce8;
-  /* background-origin: border-box;
-  outline: none; */
+  background-origin: border-box;
+  border: transparent;
+  outline: none;
 }
 
 .exept-form-field label,
@@ -1171,17 +1215,7 @@ div.relative {
   margin-right: 3px;
 }
 
-.exept-form-field {
-  outline: none;
-}
-
 /* чому не задається синій бордер при фокусі на інпут ?*/
-/* 
-.modal-form input:focus {
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-} */
 
 /* чому не можу забрати інпут рамки з чекбоксу? */
 
