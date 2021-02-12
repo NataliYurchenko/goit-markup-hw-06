@@ -900,35 +900,13 @@ button.footer-sign-up {
   background-origin: border-box;
 
   border: transparent;
+  cursor: pointer;
 }
 
 .sign-up-icon {
   margin-left: 10px;
   fill: var(--primary-white-color);
 }
-
-/* .button-sign-up {
-  position: relative;
-}
-
-.sign-up-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-/* .footer-form input::placeholder {
-  display: inline-block;
-  width: 47px;
-  height: 20px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 16px;
-  line-height: 1.185px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6); 
-}*/
 
 /* =================  MODAL  =========================== */
 
