@@ -1194,6 +1194,7 @@ input.checkbox {
 }
 
 .checkbox-label0 {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -1221,11 +1222,24 @@ input.checkbox {
 .checkbox-label0::after {
   content: '';
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: indigo;
+  width: 16px;
+  height: 15px;
+
+  border-radius: 2px;
+  background-image: url(../images/maine/icon-empty.svg);
+  /* border: 2px solid var(--maine-text-color); */
+  background-origin: border-box;
+  /* border: transparent; */
+  /* outline: none; */
 }
 
 .checkbox0:checked + .checkbox-label0::after {
-  background-color: forestgreen;
+  background-image: url(../images/maine/icon-check.svg);
+  background-origin: border-box;
+  border-radius: 2px;
+  /* border-color: var(--accent-color); */
+  /* background-size: contain; */
+  background-origin: border-box;
+  /* border: transparent; */
+  /* outline: none; */
 }
