@@ -1047,7 +1047,7 @@ input.checkbox {
   border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
-  outline: none;
+  /* outline: none; */
 
   transition: border var(--transition-duration)
     var(--transition-timing-function);
@@ -1117,7 +1117,7 @@ button.form-send:focus {
   background: #188ce8;
   background-origin: border-box;
   border: transparent;
-  outline: none;
+  /* outline: none; */
 }
 
 .checkbox-label,
