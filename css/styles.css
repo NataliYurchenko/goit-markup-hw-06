@@ -1003,7 +1003,10 @@ p.call-back {
   color: var(--maine-text-color);
 }
 
-.modal-form label {
+.name-label,
+.tel-label,
+.email-label,
+.comment-label {
   display: inline-block;
   margin-bottom: 4px;
 
@@ -1014,12 +1017,10 @@ p.call-back {
   color: var(--secondary-text-color);
 }
 
-.checkbox-label {
-  margin-bottom: 0;
-}
-
-.modal-form input {
-  /* display: block; */
+.name-input,
+.tel-input,
+.email-input,
+.comment-input {
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -1052,10 +1053,10 @@ input.checkbox {
     var(--transition-timing-function);
 }
 
-.modal-form textarea {
+.modal-form textarea.comment-input {
   width: 100%;
   height: 120px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding-left: 16px;
   padding-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1106,7 +1107,7 @@ button.form-send:focus {
   outline: none;
 }
 
-.exept-form-field label,
+.checkbox-label,
 .exept-form-field a {
   font-weight: 400;
   font-size: 14px;
@@ -1156,13 +1157,13 @@ div.relative {
   justify-content: center;
   margin-bottom: 0;
 }
-
+/* 
 input.checkbox {
   position: absolute;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-}
+} */
 
 .checkbox:checked + .icon-check {
   background-origin: border-box;
@@ -1182,4 +1183,49 @@ input.checkbox {
   margin-right: 7px;
   border: 2px solid var(--maine-text-color);
   border-radius: 2px;
+}
+/* ==========NEW============================================ */
+
+.checkbox0 {
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox-label0 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.exept-form-field0 a {
+  color: var(--accent-color);
+  /* text-decoration: none; */
+}
+.exept-form-field0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.comment-form-field {
+  margin-bottom: 20px;
+}
+.exept0 {
+  margin-left: 4px;
+}
+
+.checkbox-label0::after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: indigo;
+}
+
+.checkbox0:checked + .checkbox-label0::after {
+  background-color: forestgreen;
 }
