@@ -437,28 +437,6 @@ header .contact {
   background-size: cover;
 }
 
-/* .overlay {
-
-} */
-
-/* .overlay {
-  max-width: 1600px;
-  min-height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--hero-background);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/maine/hero-bg-opt.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
-
 /* =============== BENEFITS =========== */
 
 .benefits {
@@ -469,8 +447,6 @@ header .contact {
 .benefits-icon-list {
   display: flex;
   margin-bottom: 30px;
-  /* margin-left: -30px;
-  margin-bottom: -30px; */
 }
 
 .benefits-icon-list .item {
@@ -972,6 +948,7 @@ button.footer-sign-up {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1032,40 +1009,39 @@ button.footer-sign-up {
 
 /* =======================MODAL FORM======================= */
 .modal-form {
-  padding: 40px;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
-
-/* .name-form-field,
-.tel-form-field,
-.email-form-field {
   display: flex;
   flex-direction: column;
-} */
+}
 
 p.call-back {
+  margin-top: 0;
   margin-bottom: 12px;
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--maine-text-color);
 }
 
 .modal-form label {
+  display: inline-block;
   margin-bottom: 4px;
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.667px;
+  line-height: 1.167;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
 
+.checkbox-label {
+  margin-bottom: 0;
+}
+
 .modal-form input {
+  /* display: block; */
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -1074,19 +1050,20 @@ p.call-back {
   border-radius: 4px;
 }
 
-/* .modal-form input:focus {
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-} */
+input.checkbox {
+  border: transparent;
+}
+
+input.checkbox:focus {
+  border: transparent;
+  outline: none;
+}
 
 /* .relative input:focus-within {
   border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 } */
-
-/*  */
 
 .name-input:focus,
 .tel-input:focus,
@@ -1096,19 +1073,15 @@ p.call-back {
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
-}
 
-input .checkbox {
-  /* border: 1px solid var(--accent-color); */
-  /* box-sizing: border-box; */
-  /* border-radius: 4px; */
-  border: transparent;
-  outline: none;
+  transition: border var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .modal-form textarea {
   width: 100%;
   height: 120px;
+  margin-bottom: 20px;
   padding-left: 16px;
   padding-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1119,11 +1092,11 @@ input .checkbox {
 
 button.form-send {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
   width: 200px;
   height: 50px;
 
@@ -1131,7 +1104,7 @@ button.form-send {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.875px;
+  line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
 
@@ -1154,13 +1127,22 @@ button.form-send:focus {
 .exept-form-field a {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.714px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
 .exept-form-field a {
   color: var(--accent-color);
+}
+
+.exept-form-field {
+  margin-bottom: 18px;
+}
+
+.exept-form-field {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div.relative {
@@ -1178,13 +1160,7 @@ div.relative {
 
 .modal-form input:focus ~ svg {
   fill: var(--accent-color);
-}
-
-.checkbox {
-  position: absolute;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
 .checkbox-label {
@@ -1192,7 +1168,14 @@ div.relative {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+input.checkbox {
+  position: absolute;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .checkbox:checked + .icon-check {
@@ -1201,26 +1184,13 @@ div.relative {
   background-size: contain;
   background-image: url(../images/maine/icon-check.svg);
   border: transparent;
+  outline: none;
 }
 
 .icon-check {
   display: inline-block;
 
-  margin-right: 9px;
+  margin-right: 7px;
   border: 2px solid var(--maine-text-color);
   border-radius: 2px;
 }
-
-.exept-form-field span {
-  margin-right: 3px;
-}
-
-/* чому не задається синій бордер при фокусі на інпут ?*/
-
-/* чому не можу забрати інпут рамки з чекбоксу? */
-
-/* .checkbox{
-outline: none;
-}  */
-
-/* як позбутися незрозумілого бордера на кнопці */
