@@ -980,7 +980,8 @@ button.footer-sign-up {
   fill: var(--header-studio-color);
 }
 
-.icon-close:hover {
+.icon-close:hover,
+.icon-close:focus {
   fill: var(--accent-color);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
@@ -1184,6 +1185,7 @@ div.relative {
 }
 
 .checkbox-label0 {
+  margin-left: 28px;
   display: block;
   font-weight: 400;
   font-size: 14px;
@@ -1215,7 +1217,7 @@ div.relative {
 .checkbox-label0::after {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 12px;
   transform: translateY(-50%);
   content: '';
   display: inline-block;
