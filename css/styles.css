@@ -1157,13 +1157,6 @@ div.relative {
   justify-content: center;
   margin-bottom: 0;
 }
-/* 
-input.checkbox {
-  position: absolute;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-} */
 
 .checkbox:checked + .icon-check {
   background-origin: border-box;
@@ -1207,10 +1200,13 @@ input.checkbox {
   /* text-decoration: none; */
 }
 .exept-form-field0 {
+  position: relative;
+  /* box-sizing: content-box; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  /* padding-left: 10px; */
 }
 .comment-form-field {
   margin-bottom: 20px;
@@ -1220,6 +1216,10 @@ input.checkbox {
 }
 
 .checkbox-label0::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   content: '';
   display: inline-block;
   width: 16px;
@@ -1242,4 +1242,5 @@ input.checkbox {
   background-origin: border-box;
   /* border: transparent; */
   /* outline: none; */
+  transition: fill var(--transition-duration) var(--transition-timing-function);
 }
