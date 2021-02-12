@@ -991,7 +991,7 @@ button.footer-sign-up {
   flex-direction: column;
 }
 
-p.call-back {
+.call-back {
   margin-top: 0;
   margin-bottom: 12px;
 
@@ -1019,8 +1019,7 @@ p.call-back {
 
 .name-input,
 .tel-input,
-.email-input,
-.comment-input {
+.email-input {
   width: 448px;
   height: 40px;
   padding-left: 42px;
@@ -1028,35 +1027,20 @@ p.call-back {
   box-sizing: border-box;
   border-radius: 4px;
 }
-input.checkbox {
-  width: 0;
-  height: 0;
-  /* padding-left: 42px; */
-}
 
-/* .relative input:focus-within {
-  border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-} */
-
-.name-input:focus,
+/* .name-input:focus,
 .tel-input:focus,
 .email-input:focus,
 .comment-input:focus {
   border: 1px solid var(--accent-color);
-  box-sizing: border-box;
-  border-radius: 4px;
-  /* outline: none; */
 
   transition: border var(--transition-duration)
     var(--transition-timing-function);
-}
+} */
 
-.modal-form textarea.comment-input {
+.comment-input {
   width: 100%;
   height: 120px;
-  /* margin-bottom: 20px; */
   padding-left: 16px;
   padding-top: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
