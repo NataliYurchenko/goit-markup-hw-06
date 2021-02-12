@@ -971,7 +971,7 @@ button.footer-sign-up {
   background: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  outline: none;
+  /* outline: none; */
 
   cursor: pointer;
 }
@@ -1065,6 +1065,19 @@ input.checkbox {
   resize: none;
 }
 
+.name-input:focus,
+.tel-input:focus,
+.email-input:focus,
+.comment-input:focus {
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+
+  transition: border var(--transition-duration)
+    var(--transition-timing-function);
+}
+
 input.checkbox {
   border: transparent;
 }
@@ -1133,7 +1146,7 @@ button.form-send:focus {
 
 div.relative {
   position: relative;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .modal-form .name-icon,
 .modal-form .tel-icon,
@@ -1243,4 +1256,9 @@ div.relative {
   /* border: transparent; */
   /* outline: none; */
   transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+.name-form-field,
+.tel-form-field,
+.email-form-field {
+  margin-bottom: 10px;
 }
