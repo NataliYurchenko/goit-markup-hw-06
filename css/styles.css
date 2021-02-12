@@ -1027,14 +1027,9 @@ p.call-back {
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 input.checkbox {
-  border: transparent;
-}
-
-input.checkbox:focus {
-  border: transparent;
-  outline: none;
+  width: 0;
+  height: 0;
 }
 
 /* .relative input:focus-within {
@@ -1068,6 +1063,14 @@ input.checkbox:focus {
   resize: none;
 }
 
+input.checkbox {
+  border: transparent;
+}
+
+input.checkbox:focus {
+  border: transparent;
+  outline: none;
+}
 button.form-send {
   display: flex;
   justify-content: center;
@@ -1089,6 +1092,7 @@ button.form-send {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   /* box-sizing: border-box; */
   background-origin: border-box;
   border: transparent;
@@ -1142,6 +1146,7 @@ div.relative {
 }
 
 .checkbox-label {
+  /* color: indigo; */
   position: relative;
   display: flex;
   align-items: center;
@@ -1165,6 +1170,9 @@ input.checkbox {
   outline: none;
 }
 
+.icon-check {
+  position: absolute;
+}
 .icon-check {
   display: inline-block;
 
