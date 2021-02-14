@@ -762,6 +762,7 @@ footer {
 footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo-address,
@@ -852,7 +853,7 @@ footer b {
     height: 86px; */
 }
 
-.footer-form input {
+.footer-form-email {
   margin: 0;
   padding: 0;
   padding-left: 16px;
@@ -865,7 +866,7 @@ footer b {
   font-size: 16px;
   line-height: 1.185px;
   letter-spacing: 0.03em;
-  /* color: rgba(255, 255, 255, 0.6); */
+  color: whitesmoke;
 
   background: var(--footer-background);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -874,11 +875,14 @@ footer b {
   border-radius: 4px;
 }
 
-.footer-form input::placeholder {
+.footer-form-email::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-button.footer-sign-up {
+/* =================================================== */
+/* .footer-form input:not(:placeholder-shown)::placeholder */
+
+.footer-sign-up-bth {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1029,16 +1033,6 @@ button.footer-sign-up {
   border-radius: 4px;
 }
 
-/* .name-input:focus,
-.tel-input:focus,
-.email-input:focus,
-.comment-input:focus {
-  border: 1px solid var(--accent-color);
-
-  transition: border var(--transition-duration)
-    var(--transition-timing-function);
-} */
-
 .comment-input {
   display: block;
   width: 100%;
@@ -1064,14 +1058,6 @@ button.footer-sign-up {
     var(--transition-timing-function);
 }
 
-input.checkbox {
-  border: transparent;
-}
-
-input.checkbox:focus {
-  border: transparent;
-  outline: none;
-}
 button.form-send {
   display: flex;
   justify-content: center;
@@ -1094,7 +1080,6 @@ button.form-send {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  /* box-sizing: border-box; */
   background-origin: border-box;
   border: transparent;
 }
@@ -1103,36 +1088,10 @@ button.form-send:focus {
   background: #188ce8;
   background-origin: border-box;
   border: transparent;
-  /* outline: none; */
-}
-
-.checkbox-label,
-.exept-form-field a {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-
-  color: var(--secondary-text-color);
-}
-.exept-form-field a {
-  color: var(--accent-color);
-}
-
-.exept-form-field {
-  margin-bottom: 22px;
-}
-
-.exept-form-field {
-  width: 423px;
-  height: 24px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 div.relative {
   position: relative;
-  /* margin-bottom: 10px; */
 }
 .modal-form .name-icon,
 .modal-form .tel-icon,
@@ -1148,35 +1107,7 @@ div.relative {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.checkbox-label {
-  /* color: indigo; */
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0;
-}
-
-.checkbox:checked + .icon-check {
-  background-origin: border-box;
-  border-color: var(--accent-color);
-  background-size: contain;
-  background-image: url(../images/maine/icon-check.svg);
-  border: transparent;
-  outline: none;
-}
-
-.icon-check {
-  position: absolute;
-}
-.icon-check {
-  display: inline-block;
-
-  margin-right: 7px;
-  border: 2px solid var(--maine-text-color);
-  border-radius: 2px;
-}
-/* ==========NEW============================================ */
+/* ==========NEW CHECKBOX======================================== */
 
 .checkbox0 {
   position: absolute;
